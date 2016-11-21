@@ -1,2 +1,2 @@
 # ozadorozhnykh
-made with love and Bootstrap
+Made with love and Bootstrap
