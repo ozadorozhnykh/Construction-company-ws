@@ -1,0 +1,552 @@
+                //  STN-CONTACT
+                .stn-contact {
+                    background-color: @yellow;
+                    padding: 8px 0;
+                    .pad {
+                        margin-left: 15px;
+                    }
+                    a {
+                        color: @dark;
+                        &:first-child {}
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    .icon-cont {
+                        font-size: 25px;
+                        color: @dark;
+                        padding: 0 10px 0 0;
+                        .facebook {
+                            font-size: 23px;
+                        }
+                    }
+                    .contact {
+                        font-size: 1.07em;
+                        vertical-align: top;
+                        word-spacing: 1px;
+                    }
+                    [class^="col-"] {
+                        @media (max-width: 768px) {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+                @media (max-width:994px) {
+                    .stn-contact {
+                        display: none;
+                    }
+                } //.stn-contact
+                //    SITE-HEADER
+                .site-header {
+                    #tog {
+                        display: none;
+                    }
+                    #ham {
+                        display: none;
+                    }
+                    .site-nav {
+                        background-color: @nav;
+                        img {
+                            width: 200px;
+                            margin-top: (92px - 38px)/2;
+                        }
+                        .horizontal-nav {
+                            float: right;
+                        }
+                    }
+                }
+                @media (max-width:768px) {
+                    .site-header {
+                        img {
+                            width: 200px;
+                            margin-top: 0;
+                            margin-left: 55px;
+                        }
+                        #tog {
+                            display: none;
+                        }
+                        #ham {
+                            background: #222533;
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 24%;
+                            box-sizing: border-box;
+                            padding: 21px 9px 0 9px;
+                            display: block;
+                            cursor: pointer;
+                            position: absolute;
+                            /*left: 10px;*/
+                            /*top: -4%;*/
+                            border: 2px solid transparent;
+                            z-index: 500;
+                            opacity: .9;
+                            transition: opacity .3s;
+                        }
+                        #ham:hover {
+                            opacity: 1
+                        }
+                        #ham span {
+                            display: block;
+                            background: #fff;
+                            width: 100%;
+                            height: 2px;
+                            margin-bottom: 3px;
+                        }
+                        #tog:checked ~ nav {
+                            transform: translateX(278px);
+                        }
+                        #tog:checked ~ #ham {
+                            border-color: #fff
+                        }
+                        nav {
+                            background: #222533;
+                            position: absolute;
+                            z-index: 1;
+                            top: 0;
+                            left: -310px;
+                            width: 278px;
+                            height: 553px;
+                            padding-top: 115px;
+                            margin-top: -10px;
+                            box-sizing: border-box;
+                            transition: transform .3s, right .3s;
+                            overflow: hidden;
+                        }
+                        nav a {
+                            text-decoration: none;
+                            color: #ffcb0f;
+                            display: block;
+                            text-align: center;
+                            padding: 20px 20px 20px 120px;
+                            width: 100%;
+                            border-bottom: 1px solid #ffcb0f;
+                            transition: background .3s;
+                            position: relative;
+                            border-radius: 0px;
+                        }
+                        nav li {
+                            list-style: none;
+                            display: block;
+                        }
+                        nav li:last-child a {
+                            border-bottom: none
+                        }
+                        nav a:hover {
+                            background: #484848;
+                            border: none;
+                        }
+                        /* Fix for older browsers */
+                        nav a:hover:before {
+                            background: #484848
+                        }
+                        nav a:before {
+                            content: '';
+                            background: #222533;
+                            width: 30px;
+                            height: 58px;
+                            position: absolute;
+                            left: -11%;
+                            top: 0px;
+                            transition: background .3s;
+                        }
+                        .stn-head {
+                            h1 {
+                                font-size: 3em;
+                                text-align: center;
+                            }
+                            button {
+                                margin: 70px 11px 0 6px;
+                            }
+                            padding-top: 70px;
+                            min-height: 630px;
+                        }
+                    }
+                    body {
+                        font-size: 10px;
+                    }
+                    .stn-welcome {}
+                    .stn-our-services {
+                        padding-bottom: 16px !important;
+                        button {
+                            margin-bottom: 34px;
+                        }
+                    }
+                    .stn-projects {
+                        .no-left-padding {
+                            padding: 0;
+                            a{
+                                width: 50vw;
+                                float: left;
+                            }
+                        }
+                    }
+                    .stn-contact-us {
+                        .social {
+                            a{
+                                margin: 0 8px !important;
+                            }
+}
+	
+}
+                }
+                .stn-head {
+                    .bg-img('top-img.jpg');
+                    -ms-behavior: url(/assets/ie8-support/backgroundsize.min.htc);
+                    min-height: 741px;
+                    text-align: center;
+                    color: #ffffff;
+                    padding-top: 117px;
+                    h2 {
+                        font-size: 2.857em;
+                        line-height: 1.3;
+                        padding-bottom: 10px;
+                    }
+                    h1 {
+                        font-size: 4.5em;
+                        line-height: 1;
+                        font-family: 'FuturaLTBold';
+                        text-transform: uppercase;
+                    }
+                    h3 {
+                        font-size: 1.642em;
+                        margin-top: 32px;
+                        line-height: 1;
+                        font-weight: 100;
+                    }
+                    button {
+                        margin: 70px 35px;
+                    }
+                }
+                //STN-WELCOME
+                .stn-welcome {
+                    font-size: 1.171em;
+                    font-weight: 100;
+                    color: @text;
+                    min-height: 465px;
+                    background-color: #fff;
+                    text-align: left;
+                    h1 {
+                        padding-top: 90px;
+                        font-family: 'FuturaLTBold';
+                        font-size: 2.857em;
+                        color: @yellow;
+                        line-height: 1;
+                    }
+                    h2 {
+                        font-family: 'FuturaLTBold';
+                        font-size: 1.8em;
+                        color: @text;
+                    }
+                    p {
+                        color: @text;
+                        line-height: 18/14;
+                    }
+                    button {
+                        margin: 35px 0 35px 0;
+                    }
+                    .vh {
+                        .bg-img('man.png');
+                        min-height: 465px;
+                        z-index: 100;
+                    }
+                }
+                //STN-CHOOSE-US
+                .stn-choose-us {
+                    background: linear-gradient(232deg, #ffffff, #d6ecfa);
+                    background-size: 400% 400%;
+                    -webkit-animation: AnimationName 5s ease infinite;
+                    -moz-animation: AnimationName 5s ease infinite;
+                    -o-animation: AnimationName 5s ease infinite;
+                    animation: AnimationName 5s ease infinite;
+                    @-webkit-keyframes AnimationName {
+                        0% {
+                            background-position: 0% 50%
+                        }
+                        50% {
+                            background-position: 100% 50%
+                        }
+                        100% {
+                            background-position: 0% 50%
+                        }
+                    }
+                    @-moz-keyframes AnimationName {
+                        0% {
+                            background-position: 0% 50%
+                        }
+                        50% {
+                            background-position: 100% 50%
+                        }
+                        100% {
+                            background-position: 0% 50%
+                        }
+                    }
+                    @-o-keyframes AnimationName {
+                        0% {
+                            background-position: 0% 50%
+                        }
+                        50% {
+                            background-position: 100% 50%
+                        }
+                        100% {
+                            background-position: 0% 50%
+                        }
+                    }
+                    @keyframes AnimationName {
+                        0% {
+                            background-position: 0% 50%
+                        }
+                        50% {
+                            background-position: 100% 50%
+                        }
+                        100% {
+                            background-position: 0% 50%
+                        }
+                    }
+                    background-color: #f2f7fa;
+                    min-height: 560px;
+                    font-size: 1.171em;
+                    text-align: center;
+                    padding-bottom: 65px;
+                    h2 {
+                        font-family: 'FuturaLTBold';
+                        font-size: 2.142em;
+                        color: @text;
+                        text-transform: uppercase;
+                        margin-top: 75px;
+                        margin-bottom: 15px;
+                    }
+                    h3 {
+                        font-size: 1.07em;
+                        text-transform: uppercase;
+                        line-height: 1.2;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-family: 'FuturaLTBold';
+                    }
+                    p {
+                        line-height: 18/14;
+                        margin-top: 16px;
+                    }
+                    .icon {
+                        font-size: 2.75em;
+                        height: 126.5px;
+                        width: 126.5px;
+                        border: 6.5px solid @yellow;
+                        border-radius: 63px 63px 63px 63px;
+                        padding: (126.5px - 32.19 - 13)/2;
+                        text-align: center;
+                        margin: 60px-16.394px auto 25px auto;
+                        &:hover {
+                            border-color: @yellow;
+                            box-shadow: 0 0 0 8px #fadb64, 0 0 0 16px #f7e59c;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+                .stn-our-services {
+                    background-color: #fff;
+                    font-size: 1.171em;
+                    min-height: 780px;
+                    padding-bottom: 99px;
+                    h2 {
+                        font-family: 'FuturaLTBold';
+                        font-size: 2.142em;
+                        color: @text;
+                        text-transform: uppercase;
+                        margin-top: 90px;
+                        margin-bottom: 54px;
+                        text-align: center;
+                    }
+                    h3 {
+                        font-size: 1.33em;
+                        font-family: 'FuturaLTBold';
+                        color: @text;
+                        text-align: left;
+                        line-height: 1;
+                        padding-top: 30px;
+                        margin: 0;
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                    p {
+                        line-height: 1.6;
+                        margin: 25px 0 34px 0;
+                    }
+                }
+                .stn-projects {
+                    min-height: 925px;
+                    border-bottom: 2px solid @yellow;
+                    .bg-img('bg_centr.jpg');
+                    text-align: center;
+                    color: #fff;
+                    line-height: 1.6;
+                    h1 {
+                        padding: 60px 0 13px 0;
+                        font-size: 2.142em;
+                        font-family: 'FuturaLTBold';
+                        text-transform: uppercase;
+                        a{
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                    }
+                    //thumbs-row
+                    .thumb-1 {
+                        .bg-img('gal1.jpg');
+                        height: 495px !important;
+                    }
+                    .thumb-2 {
+                        .bg-img('gal2.jpg');
+                    }
+                    .thumb-3 {
+                        .bg-img('gal3.jpg');
+                    }
+                    .thumb-4 {
+                        .bg-img('gal4.jpg');
+                        top: 15px;
+                    }
+                    .thumb-5 {
+                        .bg-img('gal5.jpg');
+                        top: 15px;
+                    }
+                    .thumbs-row {
+                        margin-top: 55px;
+                        a {
+                            position: relative;
+                            display: block;
+                            height: 240px;
+                            background-color: @text;
+                        }
+                    }
+                }
+                .stn-reviews {
+                    color: @text;
+                    min-height: 690px;
+                    .bg-img('bg_reviews.png');
+                    text-align: center;
+                    h1 {
+                        padding: 60px 0 13px 0;
+                        font-size: 2.142em;
+                        font-family: 'FuturaLTBold';
+                        text-transform: uppercase;
+                    }
+                    .bg_g {
+                        background-color: #e5e5e5;
+                        min-height: 265px;
+                        text-align: left;
+                        border: 2px solid transparent;
+                        border-radius: 30px;
+                        margin-top: 12%;
+                        .col1 {
+                            position: absolute;
+                            left: 33px;
+                            padding-top: 11%;
+                        }
+                        .col2 {
+                            padding: 11% 5% 10% 65px;
+                        }
+                    } //.bg_g
+                    .bgd_g {
+                        content: "";
+                        position: absolute;
+                        background-image: url('/assets/img/col1d.png');
+                        background-size: contain;
+                        width: 25px;
+                        height: 13px;
+                        //top: 100%;
+                        left: calc(50% - 3.47%);
+                    }
+                    .bg_y {
+                        background-color: @yellow;
+                        min-height: 288px;
+                        text-align: left;
+                        border: 2px solid transparent;
+                        border-radius: 30px;
+                        .col1 {
+                            position: absolute;
+                            left: 33px;
+                            padding-top: 11%;
+                        }
+                        .col2 {
+                            padding: 11% 5% 10% 65px;
+                        }
+                    } //  bg_y
+                    .bgd_y {
+                        content: "";
+                        position: absolute;
+                        background-image: url('/assets/img/col2d.png');
+                        background-size: contain;
+                        width: 25px;
+                        height: 13px;
+                        left: calc(50% - 3.47%);
+                    }
+                    .clientPic {
+                        width: 25%;
+                        border: 2px solid transparent;
+                        border-radius: 50%;
+                        margin-top: 10%;
+                    }
+                    .clientName {
+                        margin-top: 3%;
+                        font-size: 1.171em;
+                        font-family: 'FuturaLTBold';
+                        text-transform: uppercase;
+                    }
+                } // .stn-reviews
+                .stn-contact-us {
+                    min-height: 486px;
+                    .bg-img ('bg_footer.png');
+                    color: #fff;
+                    font-size: 1.171em;
+                    h1 {
+                        font-size: 1.785em;
+                        text-align: left;
+                    }
+                    img {
+                        width: 200px;
+                        margin: 1em 0;
+                    }
+                    .social {
+                        font-size: 25px;
+                        color: @dark;
+                        padding: 0 10px 0 0;
+                        margin: 40px 0 40px 0;
+                        .facebook {
+                            font-size: 23px;
+                        }
+                        a {
+                            background-color: @yellow;
+                            border: 2px solid transparent;
+                            border-radius: 50px;
+                            /* width: 70px; */
+                            padding: 5px 10px;
+                            margin: 0 13px;
+                            color: @dark;
+                            text-decoration: none;
+                        }
+                        a:first-child {
+                            margin-left: 0;
+                        }
+                    } // social
+                    .menu_footer {
+                        margin-left: 50px;
+                        &:extend(.ul-unstyled);
+                        a {
+                            font-family: 'FuturaLTBook';
+                            font-size: 1.171em;
+                            color: #fff;
+                            text-decoration: none;
+                            &:hover {
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                        } // menu_footer
+                    }
+                    .icon-cont {
+                        font-size: 1.3em;
+                        margin-right: 15px;
+                    }
+                }

@@ -1,0 +1,122 @@
+//forms, buttons, dialogs etc.
+.horizontal-nav {
+    &:extend(.ul-unstyled);
+    li {
+        display: inline-block;
+        &:last-child {
+            @media (min-width: 1200px) {
+                padding-right: 55px;
+            }
+            @media (min-width:992) {
+                padding-right: 24px;
+            }
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.07em;
+            font-weight: 300;
+            padding: 28px 14px 37px 14px;
+        }
+    }
+}
+
+.yellow {
+    color: @yellow;
+}
+
+.btn-white {
+    padding: 7px 15px;
+    background-color: @yellow;
+    border: 2px solid @yellow;
+    border-radius: 12px;
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+    }
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.142em;
+        font-family: 'FuturaLTBold';
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+.btn-black {
+    padding: 7px 15px;
+    background-color: @yellow;
+    border: 2px solid @yellow;
+    border-radius: 12px;
+    max-width: 25%;
+    &:hover {
+        transition: all 0.8s ease-in-out;
+        background-color: transparent;
+        border: 2px solid @text;
+        color: @text;
+        a {
+            color: @text;
+            text-decoration: none;
+        }
+    }
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.142em;
+        font-family: 'FuturaLTBook';
+        text-decoration: none;
+    }
+}
+@media (max-width:994px){
+    .btn-black {
+	margin-left: 37.5%;
+    margin-bottom: 30px
+}
+}
+
+
+.horizontal-nav {
+    &:extend(.ul-unstyled);
+    margin-top: 29px;
+    margin-bottom: 17px;
+
+    li {
+        display: inline-block;
+        margin-left: 15px;
+
+        a {
+            .transition();
+            display: block;
+            border: 2px solid transparent;
+            border-radius: 17px;
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 8px 17px;
+            line-height: 1;
+
+            &.active {
+                border: 2px solid @text;
+                
+                background: @text;
+                &:hover{
+                    border:2px solid @yellow;
+                    transition: none;
+                }
+            }
+            &:hover {
+                border: 2px solid @yellow;
+                
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }//li
+    
+}
